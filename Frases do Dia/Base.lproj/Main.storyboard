@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Frases_do_Dia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="hMS-vO-paH">
+                                <rect key="frame" x="16" y="20" width="343" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="UEh-0Q-sDb"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4W-O8-TS8">
+                                <rect key="frame" x="70" y="178" width="235" height="30"/>
+                                <color key="backgroundColor" red="0.32815411686897278" green="0.52697986364364624" blue="0.097008533775806427" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="235" id="9qj-Oh-rod"/>
+                                    <constraint firstAttribute="height" constant="30" id="vbR-8E-XNh"/>
+                                </constraints>
+                                <state key="normal" title="Nova frase">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="novaFrase:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dt2-9O-KU4"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aspas-direita" translatesAutoresizingMaskIntoConstraints="NO" id="PW6-na-ESx">
+                                <rect key="frame" x="16" y="248" width="57" height="54"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26z-ud-WeZ">
+                                <rect key="frame" x="16" y="310" width="343" height="274"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" priority="250" constant="274" id="YGg-kA-55C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aspas-esquerda" translatesAutoresizingMaskIntoConstraints="NO" id="hqX-pb-k4R">
+                                <rect key="frame" x="303" y="592" width="56" height="55"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="hqX-pb-k4R" secondAttribute="bottom" constant="20" symbolic="YES" id="2yB-uE-C0E"/>
+                            <constraint firstItem="PW6-na-ESx" firstAttribute="top" secondItem="A4W-O8-TS8" secondAttribute="bottom" constant="40" id="DtJ-KR-qwE"/>
+                            <constraint firstItem="hMS-vO-paH" firstAttribute="leading" secondItem="PW6-na-ESx" secondAttribute="leading" id="Eod-Pn-XPC"/>
+                            <constraint firstItem="26z-ud-WeZ" firstAttribute="trailing" secondItem="hqX-pb-k4R" secondAttribute="trailing" id="JVe-nE-N6P"/>
+                            <constraint firstItem="A4W-O8-TS8" firstAttribute="top" secondItem="hMS-vO-paH" secondAttribute="bottom" constant="30" id="Lmg-1K-5I3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="A4W-O8-TS8" secondAttribute="trailing" priority="250" constant="70" id="OkV-nN-xmC"/>
+                            <constraint firstItem="hMS-vO-paH" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="TH2-lY-vQV"/>
+                            <constraint firstItem="hMS-vO-paH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="aIC-dP-F0L"/>
+                            <constraint firstItem="hMS-vO-paH" firstAttribute="trailing" secondItem="26z-ud-WeZ" secondAttribute="trailing" id="c3q-dr-NPz"/>
+                            <constraint firstItem="26z-ud-WeZ" firstAttribute="top" secondItem="PW6-na-ESx" secondAttribute="bottom" constant="8" symbolic="YES" id="eRj-dF-b8w"/>
+                            <constraint firstItem="hqX-pb-k4R" firstAttribute="top" secondItem="26z-ud-WeZ" secondAttribute="bottom" constant="8" symbolic="YES" id="ieh-5O-Oje"/>
+                            <constraint firstItem="PW6-na-ESx" firstAttribute="leading" secondItem="26z-ud-WeZ" secondAttribute="leading" id="k9o-dK-PVv"/>
+                            <constraint firstItem="hMS-vO-paH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="tKs-9P-i92"/>
+                            <constraint firstItem="hMS-vO-paH" firstAttribute="centerX" secondItem="A4W-O8-TS8" secondAttribute="centerX" id="wVS-Wu-fAQ"/>
+                            <constraint firstItem="A4W-O8-TS8" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" priority="250" constant="70" id="zxe-yR-Vqb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="legendaResultado" destination="26z-ud-WeZ" id="iZj-Ec-3qR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="aspas-direita" width="57" height="54"/>
+        <image name="aspas-esquerda" width="56" height="55"/>
+        <image name="logo" width="253" height="140"/>
+    </resources>
+</document>
